@@ -72,7 +72,7 @@ const FeaturedDiveShops = () => {
     <section className="w-full bg-[#EBF5FF] py-20 px-4 md:px-8 lg:px-16 font-sans">
       <div className="max-w-7xl mx-auto text-center">
         
-        {/* Header Section */}
+       
         <div className="mb-12">
           <h2 className="text-[#1B365D] text-3xl md:text-4xl font-bold mb-4">
             Featured Dive Shops
@@ -82,7 +82,7 @@ const FeaturedDiveShops = () => {
           </p>
         </div>
 
-        {/* Dive Shops Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {diveShops.map((shop, index) => (
             <div 
