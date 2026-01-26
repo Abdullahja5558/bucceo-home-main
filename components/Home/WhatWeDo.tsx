@@ -62,7 +62,7 @@ const FeatureCard = ({ feature }: { feature: Feature }) => (
     variants={fadeInUp}
     className="flex flex-col items-center group cursor-default text-center"
   >
-    {/* Icon Container: Glassmorphism effect */}
+    
     <motion.div 
       whileHover={{ 
         rotate: [0, -5, 5, 0],
@@ -73,7 +73,6 @@ const FeatureCard = ({ feature }: { feature: Feature }) => (
       {feature.icon}
     </motion.div>
 
-    {/* Content */}
     <h3 className="text-2xl font-bold mb-4 tracking-tight">
       {feature.title}
     </h3>
@@ -86,7 +85,7 @@ const FeatureCard = ({ feature }: { feature: Feature }) => (
 const WhatWeDo = () => {
   return (
     <section className="relative w-full overflow-hidden font-sans">
-      {/* Background: Vibrant blue gradient */}
+      
       <div className="bg-linear-to-r from-[#00AEEF] via-[#0096D6] to-[#0081C9] py-24 text-center text-white">
         
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
