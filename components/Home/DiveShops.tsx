@@ -64,7 +64,7 @@ const cardVariants: Variants = {
     scale: 1,
     transition: {
       duration: 0.7,
-      ease: [0.23, 1, 0.32, 1], // Custom premium ease-out
+      ease: [0.23, 1, 0.32, 1], 
     },
   },
 };
@@ -95,7 +95,7 @@ const DiveShopCard = memo(({ shop }: { shop: DiveShop }) => (
       <div className="absolute inset-0 bg-linear-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
     </div>
 
-    {/* Card Body */}
+    
     <div className="p-7 space-y-4">
       <div className="space-y-1">
         <h3 className="text-2xl font-bold text-[#1B365D] transition-colors duration-300 group-hover:text-[#00AEEF]">
@@ -131,7 +131,6 @@ const DiveShops = () => {
     <section className="w-full bg-white py-20 px-4 md:px-8 lg:px-16 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Header */}
         <motion.div 
           className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6"
           initial="hidden"
@@ -148,7 +147,6 @@ const DiveShops = () => {
             </p>
           </div>
 
-          {/* Premium Tab Toggle */}
           <div className="flex bg-[#F1F5F9] p-1.5 rounded-xl border border-gray-100 shadow-inner w-fit relative">
             {['Featured', 'All Shops'].map((tab) => (
               <button
@@ -171,7 +169,6 @@ const DiveShops = () => {
           </div>
         </motion.div>
 
-        {/* Dive Shop Cards Grid */}
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={containerVariants}
