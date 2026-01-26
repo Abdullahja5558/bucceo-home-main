@@ -46,13 +46,13 @@ const cardVariants: Variants = {
   },
 };
 
-// Memoized DestinationCard to prevent unnecessary re-renders during scroll/parent updates
+
 const DestinationCard = memo(({ destination }: { destination: Destination }) => {
   return (
     <motion.div
       variants={cardVariants}
       className="relative group cursor-pointer"
-      style={{ backfaceVisibility: 'hidden' }} // Improves mobile rendering
+      style={{ backfaceVisibility: 'hidden' }} 
     >
       <div className="relative overflow-hidden rounded-3xl aspect-4/3 shadow-md transition-all duration-500 group-hover:shadow-[0_25px_50px_rgba(0,0,0,0.35)] group-hover:-translate-y-3 will-change-transform">
         <img
@@ -63,7 +63,7 @@ const DestinationCard = memo(({ destination }: { destination: Destination }) => 
           className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110 will-change-transform"
         />
         
-        {/* Gradient Overlay */}
+       
         <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
 
         {/* Text Content */}
