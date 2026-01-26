@@ -1,14 +1,7 @@
 import React from 'react';
 import { Facebook, Instagram, Youtube } from 'lucide-react';
 
-/**
- * Footer Component
- * * Features:
- * - Pixel-perfect reproduction of image_73ba21.png and image_73ba87.png.
- * - Deep navy brand background (#0B3B73).
- * - Fully responsive grid (1 column mobile, 4 columns desktop).
- * - Interactive social icons and links with hover states.
- */
+
 const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "#" },
@@ -27,10 +20,10 @@ const Footer = () => {
     <footer className="w-full bg-[#0B3B73] text-white pt-16 pb-8 md:pt-20 md:pb-10 font-sans">
       <div className="max-w-9xl mx-auto px-6 md:px-12 lg:px-16">
         
-        {/* Main Footer Content */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16 md:mb-20">
           
-          {/* Brand/About Section */}
+          
           <div className="space-y-6">
             <h3 className="text-xl font-bold tracking-tight">Paradise Diving Mexico</h3>
             <p className="text-[#A5B4C7] text-sm leading-relaxed max-w-xs">
@@ -38,7 +31,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links Section */}
           <div className="space-y-6">
             <h4 className="text-lg font-bold tracking-tight">Quick Links</h4>
             <nav className="flex flex-col space-y-4">
@@ -54,7 +46,7 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact Section */}
+      
           <div className="space-y-6">
             <h4 className="text-lg font-bold tracking-tight">Contact</h4>
             <div className="text-[#A5B4C7] text-sm space-y-1.5 leading-relaxed font-medium">
@@ -70,7 +62,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Social Media Section */}
+        
           <div className="space-y-6">
             <h4 className="text-lg font-bold tracking-tight">Follow Us</h4>
             <div className="flex gap-4">
@@ -88,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar: Copyright and PADI Info */}
+        
         <div className="pt-10 border-t border-white/10 text-center">
           <p className="text-[#8E9AAF] text-xs md:text-sm font-medium">
             © 2025 Paradise Diving Mexico. All rights reserved. PADI 5-Star Dive Center #12345
