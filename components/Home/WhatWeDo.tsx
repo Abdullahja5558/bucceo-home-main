@@ -89,7 +89,7 @@ const WhatWeDo = () => {
       <div className="bg-linear-to-r from-[#00AEEF] via-[#0096D6] to-[#0081C9] py-24 text-center text-white">
         
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-          {/* Header Section */}
+          
           <motion.div
             initial="hidden"
             whileInView="visible"
@@ -105,7 +105,7 @@ const WhatWeDo = () => {
             </p>
           </motion.div>
 
-          {/* Static Grid System replaced the Marquee */}
+         
           <motion.div 
             initial="hidden"
             whileInView="visible"
