@@ -4,9 +4,7 @@ import React from 'react';
 import { MessageCircle, Phone, Mail } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 
-/**
- * Animation Variants for high-quality, premium feel
- */
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -25,7 +23,7 @@ const fadeInUp: Variants = {
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1], // Premium cubic-bezier
+      ease: [0.22, 1, 0.36, 1], 
     },
   },
 };
@@ -72,7 +70,7 @@ const HelpSupportSection = () => {
     <section className="w-full bg-white py-24 px-4 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Text */}
+        
         <motion.div 
           className="text-center mb-16"
           initial="hidden"
@@ -88,7 +86,7 @@ const HelpSupportSection = () => {
           </p>
         </motion.div>
 
-        {/* Support Cards Grid */}
+      
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8"
           variants={containerVariants}
@@ -107,7 +105,7 @@ const HelpSupportSection = () => {
               }}
               className="bg-[#F0F9FF] rounded-[2.5rem] p-10 flex flex-col items-center text-center transition-all duration-300 border border-transparent hover:border-[#00AEEF]/20 group"
             >
-              {/* Icon Container */}
+              
               <motion.div 
                 variants={iconVariants}
                 className="bg-white p-5 rounded-full shadow-sm mb-6 group-hover:scale-110 group-hover:shadow-md transition-transform duration-500"
@@ -115,7 +113,7 @@ const HelpSupportSection = () => {
                 {option.icon}
               </motion.div>
 
-              {/* Content */}
+            
               <h3 className="text-[#1B365D] text-xl font-bold mb-2">
                 {option.title}
               </h3>
@@ -123,7 +121,6 @@ const HelpSupportSection = () => {
                 {option.description}
               </p>
 
-              {/* Action Link */}
               <motion.a
                 href={option.link}
                 whileHover={{ scale: 1.05 }}
