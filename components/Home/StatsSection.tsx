@@ -3,21 +3,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useInView, useMotionValue, useSpring, motion } from 'framer-motion';
 
-/**
- * Premium Count-Up Component
- * Uses high-precision spring physics (stiffness/damping) for a "high-end" feel.
- * The numbers decelerate with an organic, mathematical curve.
- */
+
 const CountUp = ({ value }: { value: number }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.5 });
   
   const motionValue = useMotionValue(0);
   
-  // Adjusted spring settings for a smoother, more "weighted" premium feel
   const springValue = useSpring(motionValue, {
-    damping: 45,   // Higher damping for a sophisticated, non-bouncy finish
-    stiffness: 80, // Lower stiffness for a more graceful, fluid start
+    damping: 45,   
+    stiffness: 80,
     restDelta: 0.001
   });
 
@@ -66,13 +61,12 @@ const StatsSection = () => {
               }}
               className="flex flex-col items-center justify-center text-center space-y-3"
             >
-              {/* Animated Number - Optically balanced for premium readability */}
+             
               <div className="text-[#2563EB] text-4xl md:text-5xl font-medium tracking-tight flex items-baseline">
                 <CountUp value={stat.value} />
                 <span className="ml-0.5 opacity-90">{stat.suffix}</span>
               </div>
               
-              {/* Label - Subtle kerning for elegant appearance */}
               <p className="text-gray-500 text-xs md:text-sm font-medium uppercase tracking-widest opacity-80">
                 {stat.label}
               </p>
