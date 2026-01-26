@@ -4,9 +4,6 @@ import React, { useState, memo } from 'react';
 import { ChevronRight, MapPin, Star } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 
-/**
- * Interface for Dive Shop data structure
- */
 interface DiveShop {
   id: number;
   name: string;
@@ -47,9 +44,7 @@ const diveShops: DiveShop[] = [
   }
 ];
 
-/**
- * Animation Variants for orchestration
- */
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -83,17 +78,14 @@ const headerVariants: Variants = {
   },
 };
 
-/**
- * Reusable Card Component for Dive Shops
- * Optimized with React.memo
- */
+
 const DiveShopCard = memo(({ shop }: { shop: DiveShop }) => (
   <motion.div
     variants={cardVariants}
     whileHover={{ y: -12, transition: { duration: 0.4, ease: "circOut" } }}
     className="bg-white rounded-4xl overflow-hidden border border-gray-100 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)] group cursor-pointer h-full"
   >
-    {/* Card Image Area */}
+    
     <div className="relative h-60 w-full overflow-hidden">
       <img
         src={shop.image}
