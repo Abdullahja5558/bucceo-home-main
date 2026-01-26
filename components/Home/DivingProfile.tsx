@@ -42,7 +42,7 @@ const DivingProfile = () => {
     <section className="w-full py-20 px-4 md:px-8 bg-white font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header 1 */}
+     
         <div className="text-center mb-16">
           <p className="text-black font-bold text-lg mb-3">Everything You Need in One Place</p>
           <h2 className="text-[#1B365D] text-sm md:text-sm font-medium max-w-2xl mx-auto leading-snug">
@@ -50,7 +50,6 @@ const DivingProfile = () => {
           </h2>
         </div>
 
-        {/* Top Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
           {topFeatures.map((feature, idx) => (
             <motion.div
@@ -69,15 +68,14 @@ const DivingProfile = () => {
           ))}
         </div>
 
-        {/* Blue Profile Card */}
+        
         <motion.div 
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           className="bg-[#1E50E1] rounded-4xl p-8 md:p-16 text-white text-center relative overflow-hidden"
         >
-          {/* Subtle Background Pattern */}
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
+           <div className="absolute inset-0 opacity-10 pointer-events-none">
             <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
           </div>
 
