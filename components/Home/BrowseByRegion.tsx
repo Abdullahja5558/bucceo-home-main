@@ -4,9 +4,7 @@ import React from 'react';
 import { Globe, ChevronRight } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 
-/**
- * Types and Interfaces
- */
+
 interface Region {
   name: string;
   count: string;
@@ -46,9 +44,6 @@ const regions: Region[] = [
   }
 ];
 
-/**
- * Animation Variants
- */
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -86,9 +81,7 @@ const headerVariants: Variants = {
   }
 };
 
-/**
- * Reusable Region Card Component
- */
+
 const RegionCard = ({ region }: { region: Region }) => (
   <motion.div
     variants={cardVariants}
@@ -101,7 +94,7 @@ const RegionCard = ({ region }: { region: Region }) => (
   >
     <div className="flex items-start justify-between mb-6">
       <div className="flex items-start gap-4">
-        {/* Icon Container with subtle pulse animation */}
+       
         <motion.div 
           whileHover={{ rotate: 15, scale: 1.1 }}
           className="bg-[#EAF5FF] p-3 rounded-xl text-[#00AEEF] transition-colors"
@@ -123,7 +116,6 @@ const RegionCard = ({ region }: { region: Region }) => (
       </motion.div>
     </div>
 
-    {/* Country Tags */}
     <div className="flex flex-wrap gap-2">
       {region.countries.map((country, cIdx) => (
         <motion.button
@@ -144,7 +136,6 @@ const BrowseByRegion = () => {
     <section className="w-full bg-[#EAF5FF] py-20 px-4 md:px-8 lg:px-16 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
         <motion.div 
           className="text-center mb-16"
           initial="hidden"
@@ -160,7 +151,6 @@ const BrowseByRegion = () => {
           </p>
         </motion.div>
 
-        {/* Region Grid */}
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
