@@ -85,7 +85,7 @@ const DivingProfile = () => {
               Create your profile and unlock powerful features designed for serious divers
             </h2>
 
-            {/* Grid of Profile Features */}
+          
             <div className="grid grid-cols-1 md:grid-cols-3 gap-y-10 gap-x-8 text-left mb-12">
               {profileFeatures.map((item, idx) => (
                 <div key={idx} className="flex items-start gap-4 group">
@@ -100,7 +100,7 @@ const DivingProfile = () => {
               ))}
             </div>
 
-            {/* CTA Button */}
+            
             <motion.button
               whileHover={{ scale: 1.05, backgroundColor: "#ffffff" }}
               whileTap={{ scale: 0.98 }}
