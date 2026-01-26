@@ -22,13 +22,13 @@ const Navbar = () => {
 
   return (
     <nav className="w-full font-sans antialiased">
-      {/* Main Navbar */}
+      
       <div className="bg-[#1B365D] text-white px-4 py-3 md:px-8 lg:px-12 flex items-center justify-between relative z-50">
         <Link href="/" className="relative w-40 h-10 transition-transform hover:scale-[1.02]">
           <Image src="/logo.png" alt="BUCCEO" fill className="object-contain object-left" priority />
         </Link>
 
-        {/* Desktop Links */}
+     
         <div className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-gray-200">
           {['Dive Shops', 'Liveaboards', 'Gear shops', 'Insurance'].map((item) => (
             <Link key={item} href="#" className="hover:text-white transition-colors duration-300 relative group">
@@ -38,11 +38,10 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Desktop Actions */}
+        
         <div className="hidden lg:flex items-center gap-6">
           <Link href="#" className="text-[15px] font-medium text-gray-200 hover:text-white transition-colors">Special Offers</Link>
 
-          {/* Dropdowns */}
           {[ { id: 'lang', val: language, list: languages, set: setLanguage }, 
              { id: 'curr', val: currency, list: currencies, set: setCurrency } 
           ].map((drop) => (
@@ -65,12 +64,11 @@ const Navbar = () => {
           ))}
 
           <Link href="#" className="text-[15px] font-medium text-gray-200 hover:text-white">Sign In</Link>
-          
-          {/* Enhanced Premium Button */}
+
           <motion.button 
             animate={{ backgroundColor: "#0081C9" }}
             whileHover={{ 
-              backgroundColor: "#00AEEF", // Clear transition to elegant accent color
+              backgroundColor: "#00AEEF", 
               scale: 1.05,
               y: -2,
               boxShadow: "0 10px 25px -5px rgba(0, 174, 239, 0.4)"
@@ -86,7 +84,6 @@ const Navbar = () => {
         <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>{isOpen ? <X size={28} /> : <Menu size={28} />}</button>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
           <motion.div initial={{ height: 0 }} animate={{ height: 'auto' }} exit={{ height: 0 }} className="lg:hidden bg-[#1B365D] border-t border-white/10 px-6 py-8 flex flex-col gap-6 overflow-hidden">
@@ -98,7 +95,6 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      {/* Trust Bar */}
       <div className="bg-[#F8FAFC] py-4 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-2 md:gap-10">
           <span className="text-gray-400 text-[11px] font-bold uppercase tracking-widest hidden sm:block">Trusted by leading dive organization:</span>
