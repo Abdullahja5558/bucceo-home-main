@@ -40,7 +40,7 @@ const liveaboards = [
   },
 ];
 
-// Animation Variants
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -81,7 +81,7 @@ const Liveaboard = () => {
     <section className="w-full bg-[#F9FBFF] py-20 px-4 md:px-8 lg:px-16 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
+        
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -98,7 +98,7 @@ const Liveaboard = () => {
             </p>
           </div>
 
-          {/* Toggle Tabs */}
+         
           <div className="flex bg-white p-1.5 rounded-2xl border border-gray-100 shadow-sm w-fit relative">
             {['Featured', 'All Liveaboards'].map((tab) => (
               <button
@@ -121,7 +121,7 @@ const Liveaboard = () => {
           </div>
         </motion.div>
 
-        {/* Liveaboard Grid */}
+      
         <motion.div 
           variants={containerVariants}
           initial="hidden"
@@ -143,7 +143,6 @@ const Liveaboard = () => {
                 }}
                 className="bg-white rounded-4xl overflow-hidden border border-gray-100 shadow-[0_15px_35px_-15px_rgba(27,54,93,0.08)] group cursor-pointer"
               >
-                {/* Image Container */}
                 <div className="relative h-72 w-full overflow-hidden">
                   <div className="inset-0 bg-gray-100 group-hover:hidden" />
                   <motion.img
@@ -162,11 +161,11 @@ const Liveaboard = () => {
                       <span className="text-[10px] font-black uppercase tracking-widest">Featured</span>
                     </motion.div>
                   )}
-                  {/* Glass Overlay on Hover */}
+              
                   <div className="absolute inset-0 bg-linear-to-t from-[#1B365D]/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
 
-                {/* Content Container */}
+              
                 <div className="p-8 space-y-5">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-[#1B365D] group-hover:text-[#00AEEF] transition-colors duration-300">
@@ -207,7 +206,6 @@ const Liveaboard = () => {
           </AnimatePresence>
         </motion.div>
 
-        {/* View All Button */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
