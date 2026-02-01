@@ -132,7 +132,6 @@ const MarineAnimals = () => {
     <section className="w-full bg-[#F8FBFF] py-20 px-4 md:px-8 lg:px-16 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Header */}
         <motion.div 
           initial="hidden"
           whileInView="visible"
