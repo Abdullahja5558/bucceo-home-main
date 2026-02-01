@@ -103,7 +103,6 @@ const AnimalCard = ({ item }: { item: MarineAnimal }) => (
         alt={item.animal}
         className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
       />
-      {/* Availability Badge */}
       <motion.div 
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
