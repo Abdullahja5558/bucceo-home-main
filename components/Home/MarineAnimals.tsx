@@ -91,9 +91,6 @@ const headerVariants: Variants = {
   },
 };
 
-/**
- * Reusable Animal Card Component
- */
 const AnimalCard = ({ item }: { item: MarineAnimal }) => (
   <motion.div
     variants={itemVariants}
