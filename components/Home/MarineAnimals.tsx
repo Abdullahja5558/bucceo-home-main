@@ -97,7 +97,6 @@ const AnimalCard = ({ item }: { item: MarineAnimal }) => (
     whileHover={{ y: -10 }}
     className="bg-white rounded-3xl overflow-hidden shadow-[0_10px_30px_-10px_rgba(0,0,0,0.08)] border border-gray-100 group cursor-pointer"
   >
-    {/* Image Container */}
     <div className="relative h-56 w-full overflow-hidden">
       <img
         src={item.image}
