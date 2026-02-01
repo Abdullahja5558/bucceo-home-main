@@ -56,9 +56,6 @@ const marineAnimals: MarineAnimal[] = [
   },
 ];
 
-/**
- * Animation Variants for staggered children and fade-ins
- */
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
