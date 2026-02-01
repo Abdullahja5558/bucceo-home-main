@@ -3,9 +3,6 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 
-/**
- * Interface for Marine Animal data structure
- */
 interface MarineAnimal {
   id: number;
   animal: string;
