@@ -37,9 +37,7 @@ const serviceCenters: ServiceCenter[] = [
   },
 ];
 
-/**
- * Animation Variants for a premium, peaceful entrance
- */
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
