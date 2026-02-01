@@ -3,10 +3,6 @@
 import React from 'react';
 import { Wrench, MapPin, Clock, ChevronRight } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
-
-/**
- * Data structures for the Service Center information
- */
 interface ServiceCenter {
   name: string;
   location: string;
