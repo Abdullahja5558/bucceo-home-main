@@ -66,7 +66,7 @@ const DestinationCard = memo(({ destination }: { destination: Destination }) => 
        
         <div className="absolute inset-0 bg-linear-to-t from-black/95 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-500" />
 
-        {/* Text Content */}
+        
         <div className="absolute bottom-0 left-0 p-6 w-full text-white pointer-events-none">
           <motion.h3 
             className="text-xl md:text-2xl font-bold mb-1 tracking-tight drop-shadow-md"
