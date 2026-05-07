@@ -73,9 +73,7 @@ const headerVariants: Variants = {
   },
 };
 
-/**
- * Reusable DoctorCard Component for performance and cleanliness
- */
+
 const DoctorCard = ({ doc }: { doc: Doctor }) => (
   <motion.div
     variants={itemVariants}
