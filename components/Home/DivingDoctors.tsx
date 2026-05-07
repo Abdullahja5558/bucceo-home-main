@@ -154,7 +154,6 @@ const DivingDoctors = () => {
           </p>
         </motion.div>
 
-        {/* Doctors Grid */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
