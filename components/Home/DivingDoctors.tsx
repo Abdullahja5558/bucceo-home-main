@@ -4,9 +4,7 @@ import React from 'react';
 import { Stethoscope, MapPin, Phone } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 
-/**
- * Interface for Doctor data structure
- */
+
 interface Doctor {
   name: string;
   location: string;
