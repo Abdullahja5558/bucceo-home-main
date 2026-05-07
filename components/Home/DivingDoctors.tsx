@@ -84,7 +84,7 @@ const DoctorCard = ({ doc }: { doc: Doctor }) => (
     }}
     className="bg-[#F0F9FF] rounded-3xl p-8 flex flex-col items-center text-center border border-transparent transition-all duration-300 h-full"
   >
-    {/* Profile Icon Container */}
+  
     <motion.div 
       whileHover={{ rotate: 15, scale: 1.1 }}
       className="bg-[#00AEEF] p-4 rounded-full text-white mb-6 shadow-md shadow-blue-200 transition-transform"
