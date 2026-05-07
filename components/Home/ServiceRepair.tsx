@@ -70,9 +70,6 @@ const iconVariants: Variants = {
   },
 };
 
-/**
- * ServiceCard Component - Extracted for performance and readability
- */
 const ServiceCard = ({ center }: { center: ServiceCenter }) => (
   <motion.div
     variants={itemVariants}
