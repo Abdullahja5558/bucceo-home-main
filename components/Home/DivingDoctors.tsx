@@ -92,7 +92,6 @@ const DoctorCard = ({ doc }: { doc: Doctor }) => (
       <Stethoscope size={28} />
     </motion.div>
 
-    {/* Doctor Info */}
     <h3 className="text-[#1B365D] text-xl font-bold mb-2">
       {doc.name}
     </h3>
