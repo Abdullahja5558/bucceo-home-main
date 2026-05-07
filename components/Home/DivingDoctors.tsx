@@ -101,7 +101,6 @@ const DoctorCard = ({ doc }: { doc: Doctor }) => (
       {doc.location}
     </div>
 
-    {/* Specialties Section */}
     <div className="w-full pt-6 border-t border-gray-100 grow">
       <p className="text-gray-400 text-xs font-bold uppercase tracking-wider mb-3">
         Specialties:
