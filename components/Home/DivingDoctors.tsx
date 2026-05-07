@@ -39,9 +39,7 @@ const doctors: Doctor[] = [
   },
 ];
 
-/**
- * Animation Variants
- */
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
