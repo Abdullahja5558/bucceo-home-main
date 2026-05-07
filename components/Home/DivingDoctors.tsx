@@ -114,7 +114,6 @@ const DoctorCard = ({ doc }: { doc: Doctor }) => (
       </ul>
     </div>
 
-    {/* Phone Action */}
     <motion.a 
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
